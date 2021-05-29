@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  border: 2px solid brown;
+}
+
+.title-bar {
+  height: 5vh;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+}
+
+.menu-bar {
+  height: 6vh;
+  background-color: green;
+  display: flex;
+}
+
+.menu-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: aliceblue;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-item.selected {
+  background-color: rgb(245, 245, 245);
+  color: green;
+}
+
+.menu-item.selected:hover {
+  background-color: rgb(245, 245, 245);
+  cursor: default;
+}
+
+.menu-item:hover {
+  background-color: rgb(60, 94, 9);
+  cursor: pointer;
+}
+
+.menu-icon-bar {
+  height: 6vh;
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.menu-icon {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.formula-bar {
+  height: 6vh;
+  border: 2px solid brown;
+}
+
+.data-container {
+  height: 73vh;
+  border: 2px solid brown;
+}
+
+.sheet-bar {
+  height: 4vh;
+  border: 2px solid brown;
+}
