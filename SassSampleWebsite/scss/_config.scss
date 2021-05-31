@@ -1,0 +1,24 @@
+$light-color: pink;
+$font-stack: Arial, Helvetica, sans-serif;
+// $primary-color: rgb(204, 204, 231);
+$primary-color: blue;
+$secondary-color: orange;
+
+//Setting text color based on background
+
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+//Set Background and text color
+
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+
